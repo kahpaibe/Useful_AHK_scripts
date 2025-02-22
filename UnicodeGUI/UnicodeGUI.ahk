@@ -1,5 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
-TraySetIcon("UnicodeGUI.png")
+TraySetIcon("UnicodeGUI_Keys.png")
 tray_menu := A_TrayMenu
 tray_menu.Delete()
 tray_menu.Add("Toggle GUI", ToggleGUI)

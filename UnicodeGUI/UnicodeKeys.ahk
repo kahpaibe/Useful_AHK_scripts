@@ -1,5 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
-TraySetIcon("UnicodeKeys.png")
+TraySetIcon("UnicodeGUI_GUI.png")
 
 RCtrl:: Return ; Disable RCtrl by itself
 #HotIf (GetKeyState("RCtrl", "P") == 0) ; None
@@ -23,7 +23,7 @@ RCtrl:: Return ; Disable RCtrl by itself
     <^>!+<::Send("{U+FF1E}") ; AltGr + Shift + < (>) -> ＞ (Fullwidth Greater-Than Sign)
 
     ; Hazardous replacements
-    <^>!+'::Send("{U+2014}") ; AltGr + Alt + - -> — (Em Dash)
+    <^>!+'::Send("{U+2014}") ; AltGr + Shift + - -> — (Em Dash)
     <^>!+(::Send("{U+300C}") ; AltGr + Shift + ( -> 「 (Left Corner Bracket)
     <^>!+)::Send("{U+300D}") ; AltGr + Shift + ) -> 」 (Right Corner Bracket)
     
@@ -142,4 +142,5 @@ RCtrl:: Return ; Disable RCtrl by itself
     <^>!+h::Send("{U+210D}") ; AppsKey + AltGr + h -> ℍ (Double-Struck Capital H)
     <^>!+m::Send("{U+2133}") ; AppsKey + AltGr + m -> ℳ (Script Capital M)
 
-    
+    <^>!<::Send("{U+00AB}") ; AppsKey + < -> « (Left Double Angle Quote)
+    <^>!+<::Send("{U+00BB}") ; AppsKey + Shift + < -> » (Right Double Angle Quote)
