@@ -14,6 +14,10 @@ A few useful libraies for AutoHotKey.
 
 A script allowing copying and pasting multiple items from the clipboard.
 
+## UnicodeGUI
+
+AHK script defining hotkeys to enter some unicode characters, with a GUI hotkey cheat sheet that can be opened.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
